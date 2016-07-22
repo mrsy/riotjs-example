@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Riot.js</title>
+</head>
+<body>
+  <todo heading="Hello Riot!"></todo>
+  <info-area></info-area>
+
+  <script src="todo.tag" type="riot/tag"></script>
+  <script src="info-area.tag" type="riot/tag"></script>
+  <script src="https://cdn.jsdelivr.net/g/riot@2.0(riot.min.js+compiler.min.js)"></script>
+  <script>
+    var sharedObservable = riot.observable()
+    riot.mount('todo')
+    riot.mount('info-area')
+  </script>
+</body>
+</html>
